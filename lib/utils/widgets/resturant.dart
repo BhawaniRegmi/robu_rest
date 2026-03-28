@@ -82,12 +82,15 @@ class RestaurantMenuScreen extends StatelessWidget {
     );
   }
 
+
+
   Widget _buildCategoryChip(String label, bool isSelected) {
     return Container(
       margin: const EdgeInsets.only(right: 8.0),
       child: ChoiceChip(
         label: Text(label),
         selected: isSelected,
+        
         selectedColor: Colors.orangeAccent,
         onSelected: (val) {},
       ),
@@ -135,4 +138,6 @@ class RestaurantMenuScreen extends StatelessWidget {
       ),
     );
   }
+
+
 }
