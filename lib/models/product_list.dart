@@ -31,3 +31,19 @@ class ProductListViewModel extends ChangeNotifier {
     notifyListeners();
   }
 }
+
+
+class ProductCount extends StatefulWidget{
+  const ProductCount{()};
+  String product= '';
+  int value= 0;
+  String getValue(int price, String name){
+    if(value==0){
+      product=name;
+    }
+  }
+
+}
+
+
+
